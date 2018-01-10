@@ -25,6 +25,10 @@ else {
     ) seppuku = true;
 }
 
+// Forcing the polyfill on Edge browser
+if (window.navigator.userAgent.indexOf('Edge') !== -1) {
+    seppuku = false;
+}
 
 /*
  * 2. “Global” vars used across the polyfill

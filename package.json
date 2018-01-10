@@ -1,16 +1,16 @@
 {
-  "name": "stickyfilljs",
-  "version": "2.0.3",
+  "name": "qpp-stickyfilljs",
+  "version": "2.0.4",
   "description": "Polyfill for CSS `position: sticky`",
   "keywords": [
     "sticky",
     "polyfill"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/wilddeer/stickyfill",
+  "homepage": "https://github.com/somepedro/stickyfill",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wilddeer/stickyfill.git"
+    "url": "https://github.com/somepedro/stickyfill.git"
   },
   "author": {
     "name": "Oleg Korsunsky",

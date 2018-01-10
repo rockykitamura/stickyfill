@@ -31,6 +31,10 @@ else {
     ) seppuku = true;
 }
 
+// Forcing the polyfill on Edge browser
+if (window.navigator.userAgent.indexOf('Edge') !== -1) {
+    seppuku = false;
+}
 
 /*
  * 2. “Global” vars used across the polyfill
@@ -448,7 +452,7 @@ function init () {
     checkScroll();
     window.addEventListener('scroll', checkScroll);
 
-    // Watch for window resizes and device orientation cahnges and trigger refresh
+    // Watch for window resizes and device orientation changes and trigger refresh
     window.addEventListener('resize', Stickyfill.refreshAll);
     window.addEventListener('orientationchange', Stickyfill.refreshAll);
 
